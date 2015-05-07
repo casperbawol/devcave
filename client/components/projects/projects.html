@@ -1,0 +1,53 @@
+<template name='projectsList'>
+    
+        <div class="row">
+           <div class="col-md-12">
+               <h4>Projects</h4>
+           </div>
+                
+           
+           
+        </div>
+   
+
+        <hr>
+    <div class="row">
+       
+       
+           <div class="col-md-3">
+        <div class="panel panel-default" >
+            <a class="project-link" href="/newproject" >
+    
+
+                <div class="panel-body">
+
+                 
+                    <div class="row">
+                        <div class="col-md-12">
+                        
+                            <span class="icon glyphicon-plus "></span> Add new project
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </a>
+        </div>
+
+
+    </div>
+       
+        {{#each projects }}
+             {{ >projectThumb }}
+         {{/each}}
+        
+    </div>
+     
+     
+     
+  
+    
+    
+</template>

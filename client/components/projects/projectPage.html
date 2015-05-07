@@ -1,0 +1,65 @@
+<template name="projectPage">
+    
+          <div class="row">
+           <div class="col-md-6 col-md-offset-3">
+               <h3>{{ projectName}}</h3>
+              
+               <small class="pull-left">{{createdAt}} by <a href="">{{ username }}</a></small>
+               
+               
+           </div>
+   
+        </div>
+        
+         <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+               <h4>About the project</h4>
+               <p>{{ description }}</p>
+               
+           </div>
+   
+        </div>
+        
+        <div class="row">
+         <div class="col-md-6 col-md-offset-3">
+               <h4>Needed</h4>
+               <p>{{ roles }}</p>
+               
+           </div>
+   
+        </div>
+        
+        <div class="row">
+           <div class="col-md-6 col-md-offset-3">
+               <h4>Technologies</h4>
+                           <ul class="skilss-list">
+                                {{ #each skills }}
+                                    <li>{{ this }}</li>
+                              {{ /each }}
+                               
+                           </ul>
+                           
+           </div>
+   
+        </div>
+        
+                <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+               <h4>Github</h4>
+                    {{ github }}
+                           
+
+           </div>
+   
+        </div>
+        <hr>
+          <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+              <a href="#" class="btn btn-primary ">Show your interest <span class="badge">12</span></a>
+                           
+
+           </div>
+   
+        </div>
+    
+</template>

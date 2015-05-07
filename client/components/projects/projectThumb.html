@@ -1,0 +1,44 @@
+<template name="projectThumb">
+
+
+    <div class="col-md-3">
+        <div class="panel panel-default" data-id="{{ _id }}">
+            <a class="project-link" href="/project/{{_id}}" >
+                <div class="panel-heading">
+                    {{ projectName }}
+
+                </div>
+
+                <div class="panel-body">
+
+                    {{ #if short }}
+                    <div class="row">
+                        <div class="col-md-12 short-desc">
+                            <p>{{ short }}</p>
+
+                        </div>
+                    </div>
+                    <hr> {{/if}}
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ #each skills }}
+                            <span class="label label-primary">{{ this }}</span> {{ /each }}
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="panel-footer">
+                    <small class="pull-left">{{ username }}</small>
+                    <small class="pull-right">{{ createdAt }}</small>
+                </div>
+
+            </a>
+        </div>
+
+
+    </div>
+
+</template>
